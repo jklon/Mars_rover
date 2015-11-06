@@ -4,10 +4,11 @@ from sys import exit
 
 def main(input):
 	result = []
-	within_bounds = True
+
 	xmax, ymax, number, rover_actions = string_parser(input)
 	
 	for rover in range(0, number):
+		within_bounds = True
 		move_count = 0
 		position = rover_actions[rover][0]
 		x = position[0]
